@@ -43,7 +43,7 @@ public class ParticipanteService {
                 .orElseThrow(() -> new RecursoNaoEncontrado("Evento não encontrado"));
 
         existente.setNome(dto.getNome());
-        existente.setNome(dto.getEmail());
+        existente.setEmail(dto.getEmail());
         existente.setEvento(evento);
 
         return toDTO(participanteRepository.save(existente));
