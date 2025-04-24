@@ -1,9 +1,12 @@
 package io.github.dalt1x.gerenciadorDeEventos.controller;
 
 import io.github.dalt1x.gerenciadorDeEventos.dto.EventoDTO;
+import io.github.dalt1x.gerenciadorDeEventos.dto.ParticipanteDTO;
 import io.github.dalt1x.gerenciadorDeEventos.service.EventoService;
 
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -29,6 +32,12 @@ public class EventoController {
     @PostMapping
     public ResponseEntity<EventoDTO> criar(@Validated @RequestBody EventoDTO dto) {
         return ResponseEntity.ok(service.criar(dto));
+    }
+
+    @PostMapping("/{eventoId}/participantes")
+    public ResponseEntity<ParticipanteDTO> adicionarParticipante(@PathVariable Long eventoId, @RequestBody ParticipanteDTO dto) {
+        ParticipanteDTO novoParticipante = service.adicionarParticipante(eventoId, dto);
+        return ResponseEntity.status(HttpStatus.CREATED).body(novoParticipante);
     }
 
     @PutMapping("/{id}")
