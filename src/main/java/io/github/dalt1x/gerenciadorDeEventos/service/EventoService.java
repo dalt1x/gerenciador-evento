@@ -66,9 +66,12 @@ public class EventoService {
     public ParticipanteDTO adicionarParticipante(Long eventoId, ParticipanteDTO dto) {
         Evento evento = buscarEntidadePorId(eventoId);
 
+        System.out.println("DTO Recebido: " + dto); // <-- imprime o objeto que chega
+
         Participante participante = Participante.builder()
                 .nome(dto.getNome())
                 .email(dto.getEmail())
+                .telefone(dto.getTelefone())
                 .evento(evento)
                 .build();
 
@@ -78,6 +81,7 @@ public class EventoService {
                 .id(participante.getId())
                 .nome(participante.getNome())
                 .email(participante.getEmail())
+                .telefone(participante.getTelefone())
                 .eventoId(evento.getId())
                 .build();
     }

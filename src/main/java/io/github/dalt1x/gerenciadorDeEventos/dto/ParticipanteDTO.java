@@ -16,6 +16,8 @@ public class ParticipanteDTO {
     @Email
     @NotBlank
     private String email;
+
+    private String telefone;
     
     @NotNull
     private Long eventoId;

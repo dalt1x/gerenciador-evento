@@ -24,6 +24,9 @@ public class Participante {
     @NotBlank
     private String email;
 
+    @Column(nullable = true)
+    private String telefone;
+
     @ManyToOne
     @JoinColumn(name = "evento_id", nullable = false)
     private Evento evento;
