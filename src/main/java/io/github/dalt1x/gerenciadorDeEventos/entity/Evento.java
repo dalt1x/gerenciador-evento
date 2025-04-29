@@ -22,4 +22,6 @@ public class Evento {
     private String local;
     private String organizador;
 
+    @OneToMany(mappedBy = "evento", cascade = CascadeType.ALL, orphanRemoval = true)
+    private java.util.List<Participante> participantes;
 }
