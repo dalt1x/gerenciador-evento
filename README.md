@@ -1,13 +1,13 @@
 
 # 🎯 Gerenciador de Eventos - Backend
 
-Este é o backend do projeto **Gerenciador de Eventos**, construído com **Java 17 e Spring Boot**. Ele fornece uma API RESTful para gerenciar eventos e participantes, utilizando PostgreSQL como banco de dados e suporte ao CORS para integração com o frontend.
+Este é o backend do projeto **Gerenciador de Eventos**, construído com **Java 21 e Spring Boot**. Ele fornece uma API RESTful para gerenciar eventos e participantes, utilizando PostgreSQL como banco de dados e suporte ao CORS para integração com o frontend.
 
 ---
 
 ## 🧰 Tecnologias utilizadas
 
-- Java 17
+- Java 21
 - Spring Boot 3+
 - Spring Data JPA
 - PostgreSQL
