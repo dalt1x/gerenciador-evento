@@ -44,6 +44,7 @@ public class ParticipanteService {
 
         existente.setNome(dto.getNome());
         existente.setEmail(dto.getEmail());
+        existente.setTelefone(dto.getTelefone());
         existente.setEvento(evento);
 
         return toDTO(participanteRepository.save(existente));
@@ -62,6 +63,7 @@ public class ParticipanteService {
                 .id(participante.getId())
                 .nome(participante.getNome())
                 .email(participante.getEmail())
+                .telefone(participante.getTelefone())
                 .eventoId(participante.getEvento().getId())
                 .build();
     }
