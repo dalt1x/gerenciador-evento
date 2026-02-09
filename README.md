@@ -1,11 +1,11 @@
 
-# 🎯 Gerenciador de Eventos - Backend
+# Gerenciador de Eventos - Backend
 
 Este é o backend do projeto **Gerenciador de Eventos**, construído com **Java 21 e Spring Boot**. Ele fornece uma API RESTful para gerenciar eventos e participantes, utilizando PostgreSQL como banco de dados e suporte ao CORS para integração com o frontend.
 
 ---
 
-## 🧰 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - Java 21
 - Spring Boot 3+
@@ -14,10 +14,16 @@ Este é o backend do projeto **Gerenciador de Eventos**, construído com **Java 
 - Docker (via `compose.yml`)
 - Maven
 - DTOs, Services, Exceptions customizadas
+  
+---
+
+## Repositórios
+Backend: [GitHub - gerenciador-evento](https://github.com/dalt1x/gerenciador-evento)
+Frontend: [GitHub - gerenciador-evento-front](https://github.com/dalt1x/gerenciador-evento-front)
 
 ---
 
-## 📦 Como executar o projeto
+## Como executar o projeto
 
 ### 1. Clone o repositório
 ```bash
@@ -35,7 +41,7 @@ O serviço ficará disponível em `localhost:5432` com:
 - **Usuário:** `postgres`
 - **Senha:** `admin`
 
-> ⚠️ Os detalhes podem ser ajustados no arquivo `compose.yml`.
+> Os detalhes podem ser ajustados no arquivo `compose.yml`.
 
 ---
 
@@ -54,7 +60,7 @@ io.github.dalt1x.gerenciadorDeEventos.GerenciandorDeEventosApplication
 
 ---
 
-## 🌐 Endpoints principais
+## Endpoints principais
 
 | Método | Endpoint              | Descrição                     |
 |--------|------------------------|-------------------------------|
@@ -67,7 +73,7 @@ io.github.dalt1x.gerenciadorDeEventos.GerenciandorDeEventosApplication
 
 ---
 
-## 🧾 Configurações
+## Configurações
 
 ### `application.yml`
 ```yaml
@@ -86,7 +92,7 @@ spring:
 
 ---
 
-## 🧩 Estrutura de pacotes
+## Estrutura de pacotes
 
 ```
 src/main/java/io/github/dalt1x/gerenciadorDeEventos/
@@ -102,7 +108,7 @@ src/main/java/io/github/dalt1x/gerenciadorDeEventos/
 
 ---
 
-## ✅ Funcionalidades
+## Funcionalidades
 
 - CRUD de eventos e participantes
 - Relacionamentos entre entidades
@@ -112,7 +118,7 @@ src/main/java/io/github/dalt1x/gerenciadorDeEventos/
 ---
 
 
-## 📌 Objetivo do Projeto
+## Objetivo do Projeto
 
 Este projeto tem fins didáticos e serve como base para integração entre backend Java e frontend simples. Ideal para aprendizado de APIs REST com Spring Boot.
 
